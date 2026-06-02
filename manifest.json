@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "L2RDM Raid Boss Enhancer",
+  "version": "1.0",
+  "description": "Добавляет уровень боссов, фильтры и сортировку в таблицу рейд-боссов",
+  "icons": {
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://l2rdm.ru/ru/rating*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": []
+}
